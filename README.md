@@ -43,10 +43,4 @@ Open your terminal and clone the repository.
 ```bash
 git clone [https://github.com/your-username/airline-management-system.git](https://github.com/your-username/airline-management-system.git)
 
-**3. Set Up the Database**
 
-You'll need to create the database and the necessary tables.
-
-*Create the database (the name airlinemanagement is specified in Conn.java):
-```bash
-CREATE DATABASE airlinemanagement;
