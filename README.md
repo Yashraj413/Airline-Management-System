@@ -26,7 +26,7 @@ This project is built with a few key technologies found across the source files.
     * **JCalendar**: Used for a pop-up date picker in the UI.
     * [cite_start]**RS2XML**: A handy tool to help display database results in JTables.
 
-## Getting Started 🚀
+## Getting Started 
 
 Follow these steps to get the project running on your own machine.
 
@@ -35,7 +35,7 @@ Follow these steps to get the project running on your own machine.
 First, make sure you have these installed:
 * JDK 8 or higher
 * MySQL Server
-* An IDE like Eclipse or IntelliJ IDEA
+* An IDE like Eclipse, IntelliJ IDEA or VS Code
 
 **2. Clone the Project**
 
