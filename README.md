@@ -41,6 +41,6 @@ First, make sure you have these installed:
 
 Open your terminal and clone the repository.
 ```bash
-git clone [https://github.com/your-username/airline-management-system.git](https://github.com/your-username/airline-management-system.git)
+git clone [https://github.com/your-username/airline-management-system.git]
 
 
