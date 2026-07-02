@@ -1,10 +1,10 @@
-# ✈️ Airline Management System
+# Airline Management System
 
 This is a complete **desktop application** built with **Java Swing** that simulates the core functions of an airline reservation system. It's a straightforward, user-friendly tool for managing passengers and their flight bookings, all connected to a **MySQL** database.
 
 
 
-## What It Does ✨
+## What It Does 
 
 The application provides a simple graphical interface to handle common airline tasks.
 
@@ -14,7 +14,7 @@ The application provides a simple graphical interface to handle common airline t
 * [cite_start]**View Information**: Check out lists of available flights or look up specific journey details with a PNR number[cite: 8, 1].
 * **Cancellations & Passes**: Cancel a booked ticket or generate a simple boarding pass.
 
-## Tech & Tools Used 🛠️
+## Tech & Tools Used 
 
 This project is built with a few key technologies found across the source files.
 
