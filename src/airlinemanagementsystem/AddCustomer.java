@@ -1,5 +1,4 @@
 package airlinemanagementsystem;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -121,12 +120,11 @@ public class AddCustomer extends JFrame implements ActionListener{
 				female.setSelected(false);
 				JOptionPane.showMessageDialog(null, "Customer added successfully");
 			}else {
-				JOptionPane.showMessageDialog(null, "Customer could not be added");
+				JOptionPane.showMessageDialog(null, "Customer could not be added successfully");
 			}
 		}catch(Exception er) {
 			er.printStackTrace();
-		}
-		
+		}	
 	}
 	public static void main(String []args) {
 		new AddCustomer();
