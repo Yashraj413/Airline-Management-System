@@ -130,8 +130,7 @@ public class BookFlight extends JFrame implements ActionListener{
 		fetchFlightBtn.setForeground(Color.WHITE);
 		fetchFlightBtn.setBounds(380,320,130,25);
 		fetchFlightBtn.addActionListener(this);
-		add(fetchFlightBtn);
-		
+		add(fetchFlightBtn);		
 //		try {
 //			Conn conn=new Conn();
 //			Connection con=conn.CreateConn();
@@ -140,7 +139,6 @@ public class BookFlight extends JFrame implements ActionListener{
 //		}catch(Exception e) {
 //			e.printStackTrace();
 //		}
-		
 		flightName=new JLabel("Flight Name");
 		flightName.setBounds(60,360,200,20);
 		flightName.setFont(new Font("Tahoma",Font.PLAIN,16));
@@ -244,7 +242,6 @@ public class BookFlight extends JFrame implements ActionListener{
 				Connection con=conn.CreateConn();
 				Statement stmt=con.createStatement();
 				int booked=stmt.executeUpdate("insert into reservation values('PNR-"+random.nextInt(1000000)+"', 'TIC-"+random.nextInt(10000)+"','"+aadhar+"','"+name+"','"+nationality+"','"+flightName+"','"+flightCode+"','"+src+"','"+des+"','"+date+"');");
-			
 				if(booked>0) {
 					JOptionPane.showMessageDialog(null, "Ticket booked successfully");
 					setVisible(false);
@@ -255,9 +252,6 @@ public class BookFlight extends JFrame implements ActionListener{
 				ex.printStackTrace();
 			}
 		}
-		
-
-		
 	}
 	public static void main(String []args) {
 		new BookFlight();
