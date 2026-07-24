@@ -71,7 +71,6 @@ public class BoardingPass extends JFrame implements ActionListener{
 		nationalityVal.setBounds(220,180,150,25);
 		add(nationalityVal);
 		
-		
 		source=new JLabel("Source");
 		source.setBounds(60,220,200,20);
 		source.setFont(new Font("Tahoma",Font.PLAIN,16));
@@ -143,9 +142,7 @@ public class BoardingPass extends JFrame implements ActionListener{
 					destinationVal.setText(rs.getString("des"));
 					flightNameVal.setText(rs.getString("flightName"));
 					flightCodeVal.setText(rs.getString("flightCode"));
-					
-//					Date d=new Date();
-//					SimpleDateFormat fmt=new SimpleDateFormat("dd-MMM-yyy");
+
 					dateVal.setText(rs.getString("ddate"));
 				}else {
 					JOptionPane.showMessageDialog(null, "Please enter correct PNR number");
@@ -154,10 +151,7 @@ public class BoardingPass extends JFrame implements ActionListener{
 			}catch(Exception ex) {
 				ex.printStackTrace();
 			}
-		}
-		
-
-		
+		}	
 	}
 	public static void main(String []args) {
 		new BoardingPass();
