@@ -28,7 +28,7 @@ This project is built with a few key technologies found across the source files.
 
 ## Getting Started 
 
-Follow these steps to get the project running on your own machine.
+Follow these steps to know and get the project running on your own machine.
 
 **1. Prerequisites**
 
