@@ -7,16 +7,13 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 //import net.proteanit.sql.DbUtils;
-
 import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
 public class FlightInfo extends JFrame{
-
 	public FlightInfo() {
-
 		getContentPane().setBackground(Color.WHITE);
 		setLayout(null);
 		
@@ -43,27 +40,21 @@ public class FlightInfo extends JFrame{
 			}
 			
 			String[] headings= {"Flight Code","Flight Name","Source","Destination"};
-		
 			DefaultTableModel model=new DefaultTableModel(data,headings);
 			table.setModel(model);
 			table.setBounds(0,0,800,500);
 			add(table);
-
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		
 		JScrollPane jsp=new JScrollPane(table);
 		jsp.setBounds(0,0,800,500);
 		add(jsp);
-		
 		setSize(800,500);
 		setLocation(400,200);
 		setVisible(true);
 	}
 	public static void main(String[] args) {
 		new FlightInfo();
-
 	}
-
 }
