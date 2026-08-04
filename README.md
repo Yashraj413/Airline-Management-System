@@ -3,7 +3,6 @@
 This is a complete **desktop application** built with **Java Swing** that simulates the core functions of an airline reservation system. It's a straightforward, user-friendly tool for managing passengers and their flight bookings, all connected to a **MySQL** database.
 
 
-
 ## What It Does 
 
 The application provides a simple graphical interface to handle common airline tasks.
@@ -42,5 +41,3 @@ First, make sure you have these installed:
 Open your terminal and clone the repository.
 ```bash
 git clone [https://github.com/your-username/airline-management-system.git]
-
-
