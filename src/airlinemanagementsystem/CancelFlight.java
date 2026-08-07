@@ -117,17 +117,14 @@ public class CancelFlight extends JFrame implements ActionListener{
 		setVisible(true);
 	}
 	@Override
-	public void actionPerformed(ActionEvent e) {
-		
+	public void actionPerformed(ActionEvent e) {	
 		if(e.getSource()==fetchBtn) {
-			String aadhar=pnrNumberVal.getText();
-			
+			String aadhar=pnrNumberVal.getText();		
 			try {
 				Conn conn=new Conn();
 				Connection con=conn.CreateConn();
 				Statement stmt=con.createStatement();
 				ResultSet rs=stmt.executeQuery("Select * from reservation where PNR='"+pnrNumberVal.getText()+"';");
-				
 				if(rs.next()) {
 					nameVal.setText(rs.getString("name"));
 //					CancellationVal.setText(rs.getString("Cancellation"));
@@ -164,5 +161,4 @@ public class CancelFlight extends JFrame implements ActionListener{
 	public static void main(String []args) {
 		new CancelFlight();
 	}
-
 }
