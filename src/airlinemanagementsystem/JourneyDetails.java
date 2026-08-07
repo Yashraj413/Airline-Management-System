@@ -67,24 +67,18 @@ public class JourneyDetails extends JFrame implements ActionListener{
 			Connection con=conn.CreateConn();
 			Statement stmt=con.createStatement();
 			ResultSet rs=stmt.executeQuery("Select * from reservation where PNR='"+pnrVal.getText()+"';");
-			
 			if(!rs.isBeforeFirst()) {
 				JOptionPane.showMessageDialog(null, "No Information found");
 				return;
 			}else {
 				table.setModel(DbUtils.resultSetToTableModel(rs));
 			}
-			
 //			table.setModel(DbUtils.resultSetToTableModel(rs));
 		}catch(Exception ex) {
 			ex.printStackTrace();
 		}
 	}
-	
 	public static void main(String[] args) {
 		new JourneyDetails();
-
 	}
-
-
 }
