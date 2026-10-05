@@ -14,7 +14,7 @@ The application provides a simple graphical interface to handle common airline t
 
 ## Tech & Tools Used 
 
-This project is built with a few key technologies found across the source files.
+This project is built with a few key technologies found across the source files.    
 
 * **Core Language**: **Java**
 * **UI Framework**: **Java Swing**
